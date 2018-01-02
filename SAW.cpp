@@ -10,9 +10,7 @@ int main(){
 	double ha1,ha2,ha3;
 	
 	// SETTING PRESISI DESIMAL
-	cout.setf(ios::fixed);
-	cout.setf(ios::showpoint);
-	cout.precision(4);
+	cout.setf(ios::fixed);cout.setf(ios::showpoint);cout.precision(4);
 
 	// ISI DATA
 	w1=5;

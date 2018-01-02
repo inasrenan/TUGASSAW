@@ -21,31 +21,26 @@ int main(){
 		cout<<endl;
 	}
 	
-	// AMBIL NILAI MAX TIAP KRITERIA
-	mc1=max(a1c1,max(a2c1,a3c1));
-	mc2=max(a1c2,max(a2c2,a3c2));
-	mc3=max(a1c3,max(a2c3,a3c3));
-	mc4=max(a1c4,max(a2c4,a3c4));
-	mc5=max(a1c5,max(a2c5,a3c5));
+// MENAMPILKAN MATRIX R
+	cout << endl;
+	cout << "MATRIKS R :"<<endl;
+	double mc[5];
+	for(int i=0;i<5;i++){
+		mc[i+1]=max(a[0][i],max(a[1][i],a[2][i]));
+	}
+	cout << endl;
 	
-	// BUAT MATRIKS R
-	Ra1c1 = (a1c1/mc1);
-	Ra1c2 = (a1c2/mc2);
-	Ra1c3 = (a1c3/mc3);
-	Ra1c4 = (a1c4/mc4);
-	Ra1c5 = (a1c5/mc5);
-	
-	Ra2c1 = (a2c1/mc1);
-	Ra2c2 = (a2c2/mc2);
-	Ra2c3 = (a2c3/mc3);
-	Ra2c4 = (a2c4/mc4);
-	Ra2c5 = (a2c5/mc5);
-	
-	Ra3c1 = (a3c1/mc1);
-	Ra3c2 = (a3c2/mc2);
-	Ra3c3 = (a3c3/mc3);
-	Ra3c4 = (a3c4/mc4);
-	Ra3c5 = (a3c5/mc5);
+	double Ra[3][5]={	{(a[0][0]/mc[1]),(a[0][1]/mc[2]),(a[0][2]/mc[3]),(a[0][3]/mc[4]),(a[0][4]/mc[5])}, 
+						{(a[1][0]/mc[1]),(a[1][1]/mc[2]),(a[1][2]/mc[3]),(a[1][3]/mc[4]),(a[1][4]/mc[5])},
+						{(a[2][0]/mc[1]),(a[2][1]/mc[2]),(a[2][2]/mc[3]),(a[2][3]/mc[4]),(a[2][4]/mc[5])} 
+	};
+	for(int i=0;i<3;i++){
+		for(int j=0;j<5;j++){
+			cout << Ra[i][j]<< " | ";
+		}
+		cout<<endl;
+	}
+	cout<<endl;
 	
 	// MATRIKS R * W
 	RWa1c1 = Ra1c1*w1;

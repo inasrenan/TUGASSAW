@@ -50,10 +50,13 @@ int main(){
 	cout << endl;
 	cout << endl;
 	
-	// PENJUMLAHAN HASIL R * W	
-	ha1=RWa1c1+RWa1c2+RWa1c3+RWa1c4+RWa1c5;
-	ha2=RWa2c1+RWa2c2+RWa2c3+RWa2c4+RWa2c5;
-	ha3=RWa3c1+RWa3c2+RWa3c3+RWa3c4+RWa3c5;
+// MENAMPILKAN NILAI W
+	cout << "BOBOT W :"<<endl;
+	for(int i=0;i<5;i++){
+		cout<< w[i] <<" | ";
+	}
+	cout << endl;
+	cout << endl;
 		
 	// MENAMPILKAN NILAI
 	cout << "MATRIKS X :"<<endl;

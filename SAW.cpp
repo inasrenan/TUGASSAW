@@ -50,12 +50,16 @@ int main(){
 	cout << endl;
 	cout << endl;
 	
-// MENAMPILKAN NILAI W
-	cout << "BOBOT W :"<<endl;
-	for(int i=0;i<5;i++){
-		cout<< w[i] <<" | ";
+//MENAMPILKAN HASIL R*W
+	cout << "MATRIKS R * W :"<<endl;
+		double RWa[3][5];
+	for(int i=0;i<3;i++){
+		for(int j=0;j<5;j++){
+			RWa[i][j]=Ra[i][j]*w[j];
+			cout<< RWa[i][j]<<" | ";
+		}
+		cout<<endl;
 	}
-	cout << endl;
 	cout << endl;
 		
 	// MENAMPILKAN NILAI
